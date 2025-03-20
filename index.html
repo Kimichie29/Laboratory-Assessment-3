@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Albums Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Music Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#albums">Albums</a></li>
+                <li><a href="#artists">Artist</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <div class="content">
+            <h2>Welcome to My Music Collection</h2>
+            <p>Explore my favorite albums</p>
+        </div>
+    </section>
+
+    <section id="albums" class="section">
+        <div class="albums-container">
+            <div class="masterpieces">
+                <h3>FAVORITE ALBUMS</h3>
+                <p>Masterpieces that impacted my life</p>
+            </div>
+            
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="images/1.jpeg" alt="Album 1"></div>
+                    <div class="slide"><img src="images/2.jpeg" alt="Album 2"></div>
+                    <div class="slide"><img src="images/3.jpg" alt="Album 3"></div>
+                    <div class="slide"><img src="images/4.jpg" alt="Album 4"></div>
+                    <div class="slide"><img src="images/5.jpg" alt="Album 5"></div>
+                    <div class="slide"><img src="images/6.png" alt="Album 6"></div>
+                    <div class="slide"><img src="images/7.png" alt="Album 7"></div>
+                    <div class="slide"><img src="images/8.jpg" alt="Album 8"></div>
+                    <div class="slide"><img src="images/9.jpg" alt="Album 9"></div>
+                    <div class="slide"><img src="images/10.jpg" alt="Album 10"></div>
+                    <div class="slide"><img src="images/11.png" alt="Album 11"></div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="artists" class="section">
+        <h3>FAVORITE ARTIST</h3>
+        <p>The heroes that made my life liveable</p>
+        
+        <div class="artists-container">
+            <div class="artist"><img src="images/Rihanna.jpg" alt="Artist 1"><p>Rihanna</p></div>
+            <div class="artist"><img src="images/BTS.jpg" alt="Artist 2"><p>BTS</p></div>
+            <div class="artist"><img src="images/LANY.jpg" alt="Artist 3"><p>LANY</p></div>
+            <div class="artist"><img src="images/Billie.jpg" alt="Artist 4"><p>Billie Eilish</p></div>
+            <div class="artist"><img src="images/Drake.jpg" alt="Artist 5"><p>Drake</p></div>
+            <div class="artist"><img src="images/Ariana.jpg" alt="Artist 6"><p>Ariana Grande</p></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h3>Contact</h3>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Music Collection. All rights reserved.</p>
+    </footer>
+</body>
+</html>

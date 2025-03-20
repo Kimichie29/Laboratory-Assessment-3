@@ -1,0 +1,370 @@
+:root {
+    --primary-color: #ff4c4c;
+    --secondary-color: #2c3e50;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --accent-color: #ffcc00;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+}
+
+body {
+    padding-top: 80px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.section {
+    padding: 50px;
+}
+
+/* === Albums === */
+.masterpieces h3 {
+    margin-bottom: 5px;
+}
+
+.masterpieces p {
+    margin-top: 0;
+    color: #2c3e50;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 8);
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 300px;
+}
+
+.slides img {
+    width: 500px;
+    height: 500px;
+    object-fit: auto;
+    border-radius: 10px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: #ff4c4c;
+}
+
+
+
+.section h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: #2c3e50;
+}
+
+.masterpieces {
+    text-align: center;
+    width: 100%;
+}
+
+#artists h2, #artists p {
+    text-align: center;
+    font-size: 19px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2c3e50;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    font-size: 40px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+/* === Artists === */
+#artists h3 { 
+    margin-bottom: 5px;
+}
+
+#artists p {
+    margin-top: 0;
+}
+
+.artists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artist img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.artists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.artist {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.artist img {
+    width: 275px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.artist img:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 10px 25px #ff4c4c;
+}
+
+.artist p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.artist p {
+    position: absolute;
+    bottom: 15px;
+    background: #2c3e50;
+    color: white;
+    font-size: 4px;
+    font-weight: bold;
+    padding: 8px 13px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.artist:hover p {
+    opacity: 1;
+}
+
+/* === Contact Form === */
+
+#contact-form {
+    padding-top: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact {
+    padding-top: 80px;
+    padding-bottom: 95px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+    color:  #2c3e50;
+}
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    scroll-margin-top: 100px;
+}
+
+form button:hover {
+    background: var(--accent-color);
+}
+
+
+/* === Footer === */
+footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .albums-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .masterpieces {
+        text-align: center;
+    }
+}
