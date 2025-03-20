@@ -5,7 +5,7 @@
 
 This project is a Music Albums Portfolio, designed as a web-based showcase of favorite music albums and artists. It features a smooth image slider, an artist gallery, and a contact form. The interface is modern, responsive, and user-friendly, allowing visitors to explore music collections interactively.
 
-Website URL: https://kimichie29.github.io/Laboratory-Assessment-2/
+Website URL: https://kimichie29.github.io/Laboratory-Assessment-3/
 
 ## Features Overview
 
